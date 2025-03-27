@@ -1,0 +1,101 @@
+body {
+    background-image: url('https://i.pinimg.com/236x/fd/0f/87/fd0f8705dafd5157ac99fab081067802.jpg');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+background-position: center;
+    font-family: Arial, sans-serif;
+    /*background: linear-gradient(to bottom, #007BFF, #FFFFFF); /* Blue to white gradient */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height for centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+@media (min-width: 601px) {
+    .container {
+        margin-top: -285px; /* Move the container up more on larger screens */
+    }
+}
+.container {
+    max-width: 600px;
+    width: 100%; /* Full width for responsiveness */
+    background: linear-gradient( rgb(34, 17, 17),rgb(73, 59, 59))/* White background for the form */
+    margin-top: -35px; /* Move the form up a bit */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 660px;
+    margin-right: 0;
+}
+#form {
+    padding: 10px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    background-color:black;
+    color:white;
+    font-weight: bold;
+    text-decoration: dotted;
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: black;
+    font-family: serif;
+    font-size: 30px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    border: 5px solid, #333;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* select:hover {
+    border-color: gold; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow effect */
+
+ */
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* 
+button:hover {
+    background-color:gold; /* Change background color on hover */;
+*/
+
+/* #map {
+     width: 100%; /* Full width */
+    /* height: 500px; /* Fixed height */
+}
+
+
+

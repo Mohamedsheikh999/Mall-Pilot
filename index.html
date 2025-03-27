@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mall Direction Finder</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Leaflet Routing Machine -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+</head>
+<body>
+    <div id="map" style="width: 100%; height: 500px;"></div>
+
+    <div class="container">
+        <h1>Mall Pilot</h1>
+
+        <form id="directionForm">
+            <label for="mall">Select a Mall:</label>
+            <select id="mall" name="mall" required>
+                <option value="">--Choose a Mall--</option>
+                <option value="two_rivers">Two Rivers Mall</option>
+                <option value="sarit_centre">Sarit Centre</option>
+                <option value="westgate">Westgate Mall</option>
+                <option value="garden_city">Garden City Mall</option>
+            </select>
+
+            <label for="category">Select a Category:</label>
+            <select id="category" name="category" required>
+                <option value="">--Choose a Category--</option>
+                <option value="clothing">Clothing</option>
+                <option value="electronics">Electronics</option>
+                <option value="food">Food & Beverage</option>
+                <option value="beauty">Health & Beauty</option>
+                <option value="entertainment">Entertainment</option>
+            </select>
+
+            <label for="store">Select a Store:</label>
+            <select id="store" name="store" required>
+                <option value="">--Choose a Store--</option>
+            </select>
+
+            <br><br>
+            <button type="submit">Get Directions</button>
+            <button type="button" id="resetBtn">Reset Map</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script> <!-- Link to external JS -->
+</body>
+</html>
