@@ -36,6 +36,12 @@ background-position: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-left: 660px;
     margin-right: 0;
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background: linear-gradient(rgb(34, 17, 17), rgb(73, 59, 59));
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 #form {
     padding: 10px;
@@ -95,6 +101,59 @@ button:hover {
 /* #map {
      width: 100%; /* Full width */
     /* height: 500px; /* Fixed height */
+}
+
+/* General styles for the map */
+#map {
+    width: 100%; /* Full width */
+    height: 500px; /* Fixed height */
+    border: 2px solid black; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    #map {
+        height: 400px; /* Reduce map height for smaller screens */
+    }
+
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    label {
+        font-size: 16px; /* Adjust label size */
+    }
+
+    select, button {
+        font-size: 14px; /* Adjust input and button size */
+        padding: 8px;
+    }
+}
+
+/* Responsive styles for very small screens (mobile) */
+@media (max-width: 480px) {
+    #map {
+        height: 300px; /* Further reduce map height for mobile */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller heading size */
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    select, button {
+        font-size: 12px;
+        padding: 6px;
+    }
 }
 
 
